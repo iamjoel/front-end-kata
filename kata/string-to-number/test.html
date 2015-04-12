@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>array test</title>
+    <link rel="stylesheet" media="all" href="../../vendor/test/mocha.css">
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script src="../../vendor/test/mocha.js"></script>
+    <script src="../../vendor/test/chai.js"></script>
+    <script src="../../vendor/test/sinon.js"></script>
+    <script src="solve.js"></script>
+    <script>
+    mocha.setup('bdd');
+    </script>
+    <script>
+    (function() {
+
+        chai.Should();
+
+        describe('stringToNumber', function() {
+            it('should work for the examples', function() {
+                (stringToNumber("1234") === 1234).should.be.true;
+                (stringToNumber("605") === 605).should.be.true;
+                (stringToNumber("1405") === 1405).should.be.true;
+                (stringToNumber("-7") === -7).should.be.true;
+            });
+        });
+
+    })();
+    </script>
+    <script>
+    mocha.run();
+    </script>
+</body>
+
+</html>
