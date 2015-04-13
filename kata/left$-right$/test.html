@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" media="all" href="../../vendor/test/mocha.css">
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script src="../../vendor/test/mocha.js"></script>
+    <script src="../../vendor/test/chai.js"></script>
+    <script src="solve.js"></script>
+    <script>
+    mocha.setup('bdd');
+    </script>
+    <script>
+    (function() {
+
+        chai.Should();
+        var str = 'Hello (not so) cruel World!';
+        describe('left$', function() {
+            it('should work for the examples', function() {
+                left$(str, 5).should.equal('Hello');
+                left$(str, -22).should.equal('Hello');
+                left$(str, 1).should.equal('H');
+                left$(str).should.equal('H');
+                left$(str, 0).should.equal('');
+                left$(str, 99).should.equal('Hello (not so) cruel World!');
+                left$(str, 'o').should.equal('Hell');
+                left$(str, ' ').should.equal('Hello');
+            });
+        });
+
+        describe('right$', function() {
+            it('should work for the examples', function() {
+                right$(str, 6).should.equal('World!'); 
+                right$(str, -6).should.equal('(not so) cruel World!'); 
+                right$(str).should.equal('!'); 
+                right$(str, 'o').should.equal('rld!');
+                right$(str, 'or').should.equal('ld!');
+            });
+        });
+
+    })();
+    </script>
+    <script>
+    mocha.run();
+    </script>
+</body>
+
+</html>

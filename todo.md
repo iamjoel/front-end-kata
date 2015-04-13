@@ -1,5 +1,4 @@
 ## String
-1. [从开头或末尾取字符串的子字符串](http://www.codewars.com/kata/left$-and-right$)
 1. [找出字符串中的大写字母](http://www.codewars.com/kata/find-the-capitals-1)
 1. [拼写和某人打招呼的字符串，输出的某人名称要转化成首字母大写](http://www.codewars.com/kata/greet-me)
 1. [显示部分信用卡号](http://www.codewars.com/kata/credit-card-mask)
