@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" media="all" href="../../vendor/test/mocha.css">
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script src="../../vendor/test/mocha.js"></script>
+    <script src="../../vendor/test/chai.js"></script>
+    <script src="solve.js"></script>
+    <script>
+    mocha.setup('bdd');
+    </script>
+    <script>
+    (function() {
+
+        chai.Should();
+
+        describe('', function() {
+            it('should work for the examples', function() {
+                prefill(3, 1).should.eql([1, 1, 1]); // eql 内容相等
+                prefill(2, "abc").should.eql(['abc', 'abc']);
+                prefill("1", 1).should.eql([1]);
+                prefill(3, prefill(2, '2d')).should.eql([
+                    ['2d', '2d'],
+                    ['2d', '2d'],
+                    ['2d', '2d']
+                ]);
+                (function() {// 让框架去执行会报错的代码.
+                    prefill("xyz", 1);
+                }).should.throw(TypeError, 'xyz is invalid');
+
+            });
+
+
+        });
+
+    })();
+    </script>
+    <script>
+    mocha.run();
+    </script>
+</body>
+
+</html>

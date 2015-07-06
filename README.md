@@ -21,4 +21,6 @@ Coding Kata 是一种练习编程能力的一种方法，它要求程序员在�
 	* [从开头或末尾取字符串的子字符串](kata/left$-right$)
 * Control Flow(控制流)
 	* [Complete The Pattern #7 - Cyclical Permutation](kata/cyclical-permutation) 周期性排列
+* Array
+	* [预填充数组](kata/prefill)
 
