@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" media="all" href="../../vendor/test/mocha.css">
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script src="../../vendor/test/mocha.js"></script>
+    <script src="../../vendor/test/chai.js"></script>
+    <script src="solve.js"></script>
+    <script>
+    mocha.setup('bdd');
+    </script>
+    <script>
+    (function() {
+
+        chai.Should();
+
+        describe('', function() {
+            it('should work for the examples', function() {
+                pattern(9).should.equal('123456789\n234567891\n345678912\n456789123\n567891234\n678912345\n789123456\n891234567\n912345678');
+                pattern(0).should.equal('');
+                pattern(-1).should.equal('');
+            });
+        });
+
+    })();
+    </script>
+    <script>
+    mocha.run();
+    </script>
+</body>
+
+</html>
