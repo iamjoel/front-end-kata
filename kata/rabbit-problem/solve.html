@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <!-- 现在有一对兔子，从第四个月开始（包括第四个月）每个月可以生一对兔子（正好配对，小兔子生长到第四个月开始（包括第四个月）每个月生一对兔子，以此类推，请问n个月后有多少 对 兔子 -->
+    <script>
+    (function() {
+        function Rabbit() {
+            this.month = 0;
+        }
+        Rabbit.prototype.grow = function() {
+            this.month++;
+            if (this.month >= 4) {
+                this.isMature = true;
+            }
+        }
+
+        function calRabbit(monthNum) {
+            var rabbits = [new Rabbit()];
+
+            for (var i = 1; i <= monthNum; i++) {
+                rabbits.forEach(function(each) {
+                    each.grow();
+                });
+                // 这块还可以优化，比如，把成熟的兔子专门放个数组，就不用调grow了
+                var newRabbitNum = rabbits.filter(function(each) {
+                    return each.isMature;
+                }).length;
+                for (var j = 0; j < newRabbitNum; j++) {
+                    rabbits.push(new Rabbit());
+                }
+            };
+            return rabbits.length;
+        }
+
+        for (var i = 1; i < 40; i++) {
+            console.log('第%d个月有%d对兔子', i, calRabbit(i));
+        }
+    })();
+    </script>
+</body>
+
+</html>
