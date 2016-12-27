@@ -17,6 +17,7 @@
   * [从开头或末尾取字符串的子字符串](kata/left$-right$)
 * Control Flow(控制流)
   * [Complete The Pattern #7 - Cyclical Permutation](kata/cyclical-permutation) 周期性排列
+  * [第2333个能被2或者被3整除的正整数是多少](kata/2333/solve.js)
 * Array
   * [预填充数组](kata/prefill)
 * 其他
