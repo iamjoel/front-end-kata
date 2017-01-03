@@ -23,6 +23,7 @@ Coding Kata 是一种练习编程能力的一种方法，它要求程序员在�
 	* [Complete The Pattern #7 - Cyclical Permutation](kata/cyclical-permutation) 周期性排列
 * Array
 	* [预填充数组](kata/prefill)
+  * [随机获奖名单](kata/lottery)
 * 其他
 	* [兔子生兔子的问题](kata/rabbit-problem)
 

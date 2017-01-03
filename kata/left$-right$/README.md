@@ -1,4 +1,4 @@
-# []()
+# trim
 ## Description
 Once upon a time, more precisely upon BASIC time, there were 2 functions named LEFT$ and RIGHT$ (I wrote them uppercase because it was the custom in those early years).
 
