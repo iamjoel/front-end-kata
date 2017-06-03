@@ -23,6 +23,7 @@
   * [随机获奖名单](kata/lottery)
 * 其他
   * [兔子生兔子的问题](kata/rabbit-problem)
+  * [解析 lisp 风格的运算](kata/parse-lisp-like-op)
 
 ## 关于 Kata
 Kata是一个日语，意思大体上是日本武术的套路。    
