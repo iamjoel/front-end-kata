@@ -5,7 +5,8 @@
       </div>
     </div>
   `
-	function Main($el, opts) {
+
+  function Main($el, opts) {
     this.opts = Object.assign({}, opts)
     this.curr = 1
     this.total = this.opts.data.length
