@@ -24,9 +24,8 @@
 
     this.$sliderImgs = $slider.find('.slider__imgs')
     $el.html($slider)
-
-
   }
+
   Main.prototype.prev = function() {
     if(this.curr !== 1) {
       this.curr--
@@ -34,7 +33,8 @@
         left: `+=${this.opts.width}`
       })
     }
-  };
+  }
+
   Main.prototype.next = function() {
     if(this.curr !== this.total) {
       this.curr++
@@ -42,11 +42,10 @@
         left: `-=${this.opts.width}`
       })
     }
-  };
+  }
 
   function makeSlider(data) {
     var $slider = $(template)
-    // debugger
     var itemsHTML = data.map(item => {
       return `<img src="${item}" class="slider__img" style="float:left;"/>`
     }).join('')
