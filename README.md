@@ -21,6 +21,7 @@
 * Array
 	* [预填充数组](kata/prefill)
   * [随机获奖名单](kata/lottery)
+  * [扁平的分类，转化为树形结构的分类](kata/category)
 * 其他
   * [兔子生兔子的问题](kata/rabbit-problem)
   * [解析 lisp 风格的运算](kata/parse-lisp-like-op)
