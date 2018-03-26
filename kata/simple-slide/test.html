@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+        .target{
+            height: 200px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="target">
+        
+    </div>
+    <button class="prev-btn">上一张</button>
+    <button class="next-btn">下一张</button>
+    <script src="../../vendor/jquery.min.js">
+    </script>
+    <script src="solve.js"></script>
+    <script>
+        $(document).ready(()=>{
+            var slider = $('.target').slider({
+                data: [
+                    'http://via.placeholder.com/350x150',
+                    'http://via.placeholder.com/350x150/f00/fff',
+                    'http://via.placeholder.com/350x150/0f0/fff',
+                ]
+            })
+
+            $('.prev-btn').click(()=>{
+                slider.prev()
+            })
+            $('.next-btn').click(()=>{
+                slider.next()
+            })
+        })
+    </script>
+</body>
+
+</html>

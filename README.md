@@ -24,6 +24,7 @@
   * [扁平的分类，转化为树形结构的分类](kata/category)
 * 其他
   * [兔子生兔子的问题](kata/rabbit-problem)
+  * [极简幻灯](kata/simple-slide) 用 jQuery。一共用了 60 行代码~
   * [解析 lisp 风格的运算](kata/parse-lisp-like-op)
 
 ## 关于 Kata
